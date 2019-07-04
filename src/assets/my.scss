@@ -1,0 +1,23 @@
+
+.my-app-block{
+    clear:both;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+}
+.my-float{
+  float: left;
+
+  a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,100,0.2);
+  };
+  a:active{
+    transition: 0.3s;
+    width: 95%;
+    height: 95%;
+  };
+  
+}

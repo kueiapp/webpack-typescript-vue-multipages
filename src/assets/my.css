@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body {
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+article {
+  position: relative;
+  top: 550px;
+  /*background-color: white;*/
+}
+
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section h2, section legend {
+  text-transform: uppercase;
+}
+
+legend {
+  font-size: 2em !important;
+  border: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+legend::after, section h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #3F6EA7;
+  margin: 0.5rem auto;
+}
+
+#google-trainer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.div-center {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+#buttonHome {
+  background-color: orange;
+  padding: 15px;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.bg-light-gray {
+  background-color: #eee;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.my-app-block {
+  clear: both;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  margin-bottom: 15px;
+}
+legend{
+  margin: 10px 0 !important;
+}
+.my-float {
+  float: left;
+}
+.my-float a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 100, 0.2);
+}
+.my-float a:active {
+  transition: 0.3s;
+  width: 95%;
+  height: 95%;
+}
+.my-blog-list{
+  margin: 9px;
+  width: 100%;
+}
+.list-group {
+  text-align: left;
+  margin: 10px 0;
+}
+#go-top{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+.list-group-item {
+  overflow-x: hidden;
+}
+
+#news .list-group-item a {
+  color: black;
+}
+
+/*
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+  overflow-x: auto;
+}
+
+.flex-container > div {
+  background-color: #222;
+  width: 350px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+/*上下兩種寫法結果不大相同*/
+.gallery {
+  /*position: relative;*/
+  max-width: 100%;
+  padding: 0 10;
+}
+
+.gallery_scroller {
+  /* snap 的發生軸  */
+  scroll-snap-type: x;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+.gallery_scroller > div {
+  scroll-snap-align: center;
+  /* snap align center  */
+  margin: 10px;
+  /*position: relative;*/
+  background-color: white;
+  border-radius: 10px;
+  /*width: 280px; 會被 flex 制約，此相當於 min-width*/
+  min-width: 280px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  min-height: 200px;
+}
+
+footer {
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: #FFC700;
+}
+
+nav, .navbar-header, .navbar {
+  background-color: #1f1f1f !important;
+  height: 66px;
+}
+
+nav .a {
+  color: white;
+}
+
+.my-training-block {
+  height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background-color: #1f1f1f;
+  }
+
+  header .intro-text {
+    padding-top: 0 !important;
+  }
+
+  .my-training-block {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 150px;
+    padding-bottom: 0px;
+    background-color: #1f1f1f;
+  }
+
+  header .intro-text {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+    font-size: 16pt;
+  }
+}
+/**/
+
+/*# sourceMappingURL=my.tmp.css.map */
