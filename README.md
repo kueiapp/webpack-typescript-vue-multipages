@@ -1,5 +1,5 @@
 Build a Web App sample in multiple pages
-using Node.js and Vue in TypeScript
+using Node.js, Vue, Vuex, Vue Router in TypeScript
 ============
 ## setup by the commands below #
 1. Installation from package.json

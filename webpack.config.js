@@ -16,8 +16,8 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: { // chunk name and path
-    page1: './src/page1/index.ts',
-    page2: './src/page2/training.ts',
+    page1: './src/page1/page1.ts',
+    page2: './src/page2/page2.ts',
     vendors: './src/vendors.ts'
   },
   output: {
@@ -88,10 +88,9 @@ module.exports = {
     new HtmlWebpackPlugin(
     {  
       title: 'Home page',
-      filename: 'index.html',          // copy dest. of export dir
-      template: 'src/page1/index.html',      // source
+      filename: 'page1.html',          // copy dest. of export dir
+      template: 'src/page1/page1.html',      // source
       favicon: './src/logo.png',
-      template: './src/page1/index.html',
       'meta': {  // export <meta>
         "viewport": "width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1",
         'keywords': "Kuei App,Tripla Fun,Tripla,旅行,導覽,WatchColour,Watch,Watch,Google for Education, Certified Trainer",
@@ -106,10 +105,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({  
       title: 'Training page',
-      filename: 'training.html',          // copy dest. of export dir
-      template: 'src/page2/training.html',      // source
+      filename: 'page2.html',          // copy dest. of export dir
+      template: 'src/page2/page2.html',      // source
       favicon: './src/logo.png',
-      template: './src/page2/training.html',
+      template: './src/page2/page2.html',
       'meta': {  // export <meta>
         "viewport": "width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1",
         'keywords': "Kuei App,Tripla Fun,Tripla,旅行,導覽,WatchColour,Watch,Watch,Google for Education, Certified Trainer",

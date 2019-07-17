@@ -4,7 +4,7 @@
   "description": "building a web app using TypeScript and Vue",
   "main": "./dist/client/index.build.js",
   "scripts": {
-    "start": "http-server ./dist -o",
+    "start": "http-server ./dist",
     "build": "webpack --mode development",
     "deploy": "webpack --mode production"
   },
@@ -17,6 +17,7 @@
   "license": "GPL",
   "devDependencies": {
     "@types/express": "^4.17.0",
+    "@types/vue-router": "^2.0.0",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.6",
     "babel-preset-env": "1.7.0",
@@ -54,6 +55,8 @@
     "underscore": "1.9.1",
     "vue": "2.6.10",
     "vue-class-component": "7.1.0",
-    "vue-property-decorator": "8.2.1"
+    "vue-property-decorator": "8.2.1",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.1"
   }
 }
