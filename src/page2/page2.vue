@@ -13,7 +13,7 @@
 			  </div>
 	    	<div class="col-md-6">
 			    <h1><button @click="addCounter"> Add </button> counter: {{showCounter}}</h1>
-			    <h1><button @click="asyncAddCounter"> Add after 3 sec </button> counter: {{showCounter}}</h1>
+			    <h1><button class="btn btn-primary" @click="asyncAddCounter"> Add after 3 sec </button> counter: {{showCounter}}</h1>
 			  </div>
 	    </div>
 	    <div class="row">
@@ -113,6 +113,22 @@ export default class page2 extends Vue {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+// three ways to import other css/scss files
+// @import '../assets/color';
+// @import '../assets/_color.scss'; 
+@import '~styles/color'; // using alias should be setup in webpack.config.js
+
+select{
+	border: 3px solid red;
+}
+div.jumbotron{
+	button{
+		background-color: $danger; // variable in imported file
+		color: white;
+		padding: 8px;
+		font-size: 12pt;
+	}
+}
 
 </style>

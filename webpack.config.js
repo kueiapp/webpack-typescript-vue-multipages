@@ -61,7 +61,7 @@ module.exports = {
         }
       },
       {
-        test: /.css$/,
+        test: /\.css$/,
         use: [
           'vue-style-loader',
           // 'style-loader', // replaces with vue-style-loader
@@ -70,6 +70,7 @@ module.exports = {
       },
       {
         test: /\.s[c|a]ss$/,
+        // loader: 'style!css!sass' // deprecated
         use: [
           'vue-style-loader', // 4. inject style in .vue file into DOM
           // 'style-loader', // replaces with vue-style-loader
@@ -129,7 +130,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json'],  // using import without extension
     alias: {
-      vue$: 'vue/dist/vue.esm.js'
+      vue$: 'vue/dist/vue.esm.js',
+      'styles': path.resolve(__dirname, './src/assets') // can use ~style when import
     }
   },
   performance: {
