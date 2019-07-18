@@ -17,7 +17,16 @@ const getters = {
 	}
 }
 // methods to call mutations asyncly (methods)
-const actions = {}
+const actions = {
+	// set action method name
+	asyncAddCounter(state, payload=0) {
+		// async
+		setTimeout(function() {
+			// call methods in mutations
+			state.commit('addCounter', payload)
+		}, 3000);
+	}
+}
 // to change states syncly
 const mutations = {
 	setStatus(state,newstatus) {

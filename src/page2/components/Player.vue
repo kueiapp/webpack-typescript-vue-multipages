@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="alert alert-primary">{{ msg }}</h1>
-    <h2 class="alert alert-dismissible alert-primary">Player Page</h2>
+    <h2 class="alert alert-dismissible alert-primary">Player Component</h2>
     <h1>state: {{showStatus}}</h1>
     <p>{{ detail.uid }} - {{ detail.name }}</p>
     <button class="btn btn-success" @click="goPlayerAbout(detail.uid)">Show About Comp</button>

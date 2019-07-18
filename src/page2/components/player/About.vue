@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h2 class="alert alert-dismissible alert-success">Embeded Player About Page</h2>
+    <h2 class="alert alert-dismissible alert-success">Embeded About Page</h2>
     <h1>Params.uid: {{ $route.params.uid }}</h1>
     <h1>uid: {{ uid }}</h1>
   </div>

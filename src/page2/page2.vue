@@ -12,7 +12,8 @@
 			    <h1>status: {{showStatus}}</h1>
 			  </div>
 	    	<div class="col-md-6">
-			    <h1><button @click="addCounter"> + </button> counter: {{showCounter}}</h1>
+			    <h1><button @click="addCounter"> Add </button> counter: {{showCounter}}</h1>
+			    <h1><button @click="asyncAddCounter"> Add after 3 sec </button> counter: {{showCounter}}</h1>
 			  </div>
 	    </div>
 	    <div class="row">
@@ -84,7 +85,12 @@ export default class page2 extends Vue {
 	}
 // methods
 	addCounter() {
-		this.$store.commit('addCounter',2)
+		// call mutations
+		this.$store.commit('addCounter',2) // add 2
+	}
+	asyncAddCounter() {
+		// call actions
+		this.$store.dispatch('asyncAddCounter',1) // add 1
 	}
   goPlayer(uid) {
     // by different $router methods

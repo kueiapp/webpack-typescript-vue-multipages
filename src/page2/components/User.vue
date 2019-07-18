@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <h2 class="alert alert-dismissible alert-danger">User Component</h2>
     <h1>$route.params.uid: {{ $route.params.uid }}</h1>
     <h1>$route.params.nationality: {{ $route.params.nationality }}</h1>
     <h3>status: {{showStatus}}</h3>
